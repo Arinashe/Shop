@@ -1,0 +1,49 @@
+:root{
+    --color1: #E8F1F8; /*текст*/
+    --color2: #0B1220; /*фон*/
+    /* --color3: #fff;
+    --color4: #fff;
+    --color5: #fff; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--color2);
+    width: 100%;
+    min-height: 100vh;
+}
+
+header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header>.logo>a{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color1);
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+header>nav>ul{
+    display: flex;
+    gap: 15px;
+}
+
+header>nav>ul>li{
+    list-style-type: none;
+}
+
+header>nav>ul>li>a{
+    text-decoration: none;
+    color: var(--color1);
+}

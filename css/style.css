@@ -113,12 +113,10 @@ header>nav>ul>li>a:hover {
 
 .card-img {
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
 }
 
 .card-label>p {
-    /* color: #7FD4FF;  */
     font-size: 12px;
 }
 
@@ -212,12 +210,9 @@ header>nav>ul>li>a:hover {
     color: var(--accent);
     font-size: 12px;
     display: flex;
-    /* justify-self: flex-start; */
 }
 
 hr{
-    /* padding: 0 50px; */
-    /* width: 80%; */
     border: 2px solid var(--color3)
 }
 
@@ -227,15 +222,11 @@ hr{
     justify-content: space-between;
     align-items: center;
     align-self: center;
-    /* max-width: 1200px; */
-    /* margin: 0 auto; */
     gap: 40px;
 }
 
 .label {
     font-size: 10px;
-    /* font-weight: 600; */
-    /* letter-spacing: 1px; */
     text-transform: uppercase;
     color: var(--accent);
     margin-bottom: 20px;
@@ -245,8 +236,6 @@ hr{
     font-size: 42px;
     font-weight: 500;
     color: var(--color1);
-    /* margin-bottom: 20px; */
-    /* letter-spacing: -0.5px; */
 }
 
 .text {
@@ -256,13 +245,8 @@ hr{
 }
 
 .form-box {
-    /* max-width: 80%;   */
-    /* flex: 1;
-    max-width: 500px; */
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    padding: 0 50px; */
     gap: 10px;
 }
 
@@ -270,39 +254,34 @@ hr{
     display: flex;
     gap: 10px;
     width: 100%;
-    /* margin-bottom: 15px; */
 }
 
 .input {
-    /* flex: 1; */
     padding: 16px 20px;
-    background-color: #112133;
+    background-color: var(--color3);
     border: none;
     border-radius: 8px;
-    color: #ffffff;
+    color: var(--color1);
     font-size: 15px;
     outline: none;
     transition: box-shadow 0.2s ease;
 }
 
 .input::placeholder {
-    color: #8a9bb0;
+    color: var(--color4);
 }
 
 .input:focus {
-    box-shadow: 0 0 0 2px #7fd1ff;
+    box-shadow: 0 0 0 2px var(--accent);
 }
 
 .btn {
     padding: 16px 20px;
-    background-color: #7fd1ff;
-    color: #112133;
+    background-color: var(--accent);
+    color: var(--color3);
     border: none;
     border-radius: 8px;
     font-size: 12x;
-    /* font-weight: 600; */
-    /* cursor: pointer; */
-    /* white-space: nowrap; */
     transition: opacity 0.2s ease;
 }
 
@@ -312,6 +291,6 @@ hr{
 
 .note {
     font-size: 11px;
-    color: #a0aec0;
+    color: var(--color4);
     line-height: 1.4;
 }

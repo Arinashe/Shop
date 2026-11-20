@@ -681,3 +681,121 @@ body {
     border: 0;
     display: block;
 }
+
+.site-footer {
+    padding: 60px 5% 40px;
+    border-top: 1px solid var(--border);
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 24px;
+    font-weight: 500;
+    color:var(--textLight);
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    transition: color 0.2s;
+}
+
+.footer-logo:hover {
+    color: #8fa2b7;
+}
+
+.logo-icon {
+    width: 24px;
+    height: 24px;
+    opacity: 0.6;
+}
+
+.footer-desc {
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--p);
+    margin-bottom: 40px;
+}
+
+.footer-copy {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color:var(--p);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 40px;
+    text-align: right;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.footer-email {
+    font-size: 14px;
+    color: var(--p);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-email:hover {
+    color: #6f6f6f;
+}
+
+.footer-email .arrow-up {
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+.footer-socials {
+    font-size: 13px;
+    color:var(--p);
+}
+
+.footer-socials a {
+    color:var(--p);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-socials a:hover {
+    color:#6f6f6f;
+}
+
+.footer-policy {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: #aabdd1;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+}
+
+.footer-policy:hover {
+    color: var(--p);
+}

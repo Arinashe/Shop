@@ -1,14 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <section class="hero">
+        <div class="bg-label top-left">МАГАЗИН НЕВОЗМОЖНЫХ ПУТЕШЕСТВИЙ</div>
+        <div class="bg-label bottom-left">ЗА ПРЕДЕЛАМИ ИЗВЕСТНОГО</div>
+        <div class="bg-label bottom-right">ЛИСТ 001 / МАСШТАБ 1 : ∞</div>
+        <div class="bg-coord">54° 17' 7" / 00° 00'</div>
+        <div class="content-hero">
+            <div class="hero-text">
+
+                <h1 class="main-title">
+                    Сувениры<br>
+                    из мест,<br>
+                    которых нет
+                </h1>
+
+                <p class="subtitle">
+                    Настоящие вещи. Вымышленные координаты.<br>
+                    Для тех, кто скучает по неизведанному.
+                </p>
+
+                <div class="hero-btn">
+                    <a href="#" class="btn btn-location">
+                        Выбрать локацию
+                        <span class="arrow">↗</span>
+                    </a>
+                    <a href="#" class="btn btn-catalog">
+                        Смотреть каталог
+                    </a>
+                </div>
+            </div>
+            <div class="card-location-day">
+                <div class="header-location-day">
+                    <span class="location-day-eyebrow">● ЛОКАЦИЯ ДНЯ / 003</span>
+                </div>
+                <h2 class="title-location-day">Маяк «Тихий прилив»</h2>
+                <p class="subtitle-location-day">Там, где море помнит имена.</p>
+
+                <div class="location-day-footer">
+                    <span class="location-day-price">от 1490р</span>
+                    <a href="#"><span class="location-day-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <a href="#" class="marker marker-purple" aria-label="Станция «Полярная станция»" data-label="ЛОКАЦИЯ 001 · СТАНЦИЯ"
+            data-title="«Полярная станция»" data-coords="58°14′ N, 07°42′ W · не на карте"
+            data-embed="https://www.openstreetmap.org/export/embed.html?bbox=-7.85,58.15,-7.55,58.35&layer=mapnik&marker=58.2333,-7.7000"
+            data-map="https://www.openstreetmap.org/?mlat=58.2333&mlon=-7.7000#map=10/58.2333/-7.7000">
+            <span class="marker-dot"></span>
+        </a>
+
+        
+        <a href="#" class="marker marker-blue" aria-label="Станция «Пепел рассвета»" data-label="ЛОКАЦИЯ 002 · СТАНЦИЯ"
+            data-title="Станция «Пепел рассвета»" data-coords="41°03′ S, 174°51′ E · координаты не подтверждены"
+            data-embed="https://www.openstreetmap.org/export/embed.html?bbox=174.70,-41.15,175.00,-40.95&layer=mapnik&marker=-41.05,174.85"
+            data-map="https://www.openstreetmap.org/?mlat=-41.05&mlon=174.85#map=10/-41.05/174.85">
+            <span class="marker-dot"></span>
+        </a>
+
+        
+        <a href="#" class="marker marker-yellow" aria-label="Маяк «Тихий прилив»" data-label="ЛОКАЦИЯ 003 · МАЯК"
+            data-title="Маяк «Тихий прилив»" data-coords="58°14′ N, 07°42′ W · не на карте"
+            data-embed="https://www.openstreetmap.org/export/embed.html?bbox=-7.85,58.15,-7.55,58.35&layer=mapnik&marker=58.2333,-7.7000"
+            data-map="https://www.openstreetmap.org/?mlat=58.2333&mlon=-7.7000#map=10/58.2333/-7.7000">
+            <span class="marker-dot"></span>
+        </a>
+
+        
+        <a href="#" class="marker marker-green" aria-label="Маяк «Последний огонек»" data-label="ЛОКАЦИЯ 004 · МАЯК"
+            data-title="Маяк «Последний огонек»" data-coords="60°07′ N, 26°58′ E · архипелаг не найден"
+            data-embed="https://www.openstreetmap.org/export/embed.html?bbox=26.75,59.95,27.20,60.30&layer=mapnik&marker=60.1167,26.9667"
+            data-map="https://www.openstreetmap.org/?mlat=60.1167&mlon=26.9667#map=10/60.1167/26.9667">
+            <span class="marker-dot"></span>
+        </a>
+
+        
+        <a href="#" class="marker marker-cyan" aria-label="Обсерватория «На орбите сна»"
+            data-label="ЛОКАЦИЯ 005 · ОБСЕРВАТОРИЯ" data-title="Обсерватория «На орбите сна»"
+            data-coords="31°47′ N, 106°28′ W · пустыня, без названия"
+            data-embed="https://www.openstreetmap.org/export/embed.html?bbox=-106.65,31.60,-106.25,32.00&layer=mapnik&marker=31.7833,-106.4667"
+            data-map="https://www.openstreetmap.org/?mlat=31.7833&mlon=-106.4667#map=10/31.7833/-106.4667">
+            <span class="marker-dot"></span>
+        </a>
+
+        
+        <a href="#" class="marker marker-pink" aria-label="Обсерватория «Карманная вселенная»"
+            data-label="ЛОКАЦИЯ 006 · ОБСЕРВАТОРИЯ" data-title="Обсерватория «Карманная вселенная»"
+            data-coords="44°25′ N, 68°12′ W · закрыта для посещения"
+            data-embed="https://www.openstreetmap.org/export/embed.html?bbox=-68.45,44.25,-67.95,44.65&layer=mapnik&marker=44.4167,-68.2000"
+            data-map="https://www.openstreetmap.org/?mlat=44.4167&mlon=-68.2000#map=10/44.4167/-68.2000">
+            <span class="marker-dot"></span>
+        </a>
+
+        <dialog class="modal" id="mapModal" aria-labelledby="modalTitle">
+            <button class="modal-close" data-close aria-label="Закрыть">✕</button>
+
+            <header class="modal-header">
+                <p class="modal-label" id="modalLabel">ЛОКАЦИЯ</p>
+                <h3 class="modal-title" id="modalTitle">Название</h3>
+                <p class="modal-coords" id="modalCoords">—</p>
+            </header>
+
+            <div class="modal-map">
+                <iframe id="modalMapFrame" title="Карта локации" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            </div>
+
+            <footer class="modal-footer">
+                <a class="modal-link" id="modalLink" href="#" target="_blank" rel="noopener">
+                    Открыть в новой вкладке <span class="arrow">→</span>
+                </a>
+            </footer>
+        </dialog>
+
+    </section>
 
     <script src="./js/script.js"></script>
 </body>
+
 </html>

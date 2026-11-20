@@ -1,39 +1,54 @@
 (function () {
-    const modal    = document.getElementById('mapModal');
-    const labelEl  = document.getElementById('modalLabel');
-    const titleEl  = document.getElementById('modalTitle');
-    const coordsEl = document.getElementById('modalCoords');
-    const linkEl   = document.getElementById('modalLink');
-    const frameEl  = document.getElementById('modalMapFrame');
+    const modal = document.getElementById('mapModal');
     const closeBtn = modal.querySelector('.modal-close');
+    const frameEl = document.getElementById('modalMapFrame');
+    const imageEl = document.getElementById('modalImage');
+
+    const elLabel = document.getElementById('modalLabel');
+    const elTitle = document.getElementById('modalTitle');
+    const elCoords = document.getElementById('modalCoords');
+    const elStatusBlock = document.getElementById('modalStatus');
+    const elStatusText = document.getElementById('statusText');
+    const elDesc = document.getElementById('modalDescription');
+    const elPrice = document.getElementById('modalPrice');
+    const elMaterial = document.getElementById('specMaterial');
+    const elSize = document.getElementById('specSize');
+    const elEdition = document.getElementById('specEdition');
 
     function openModal(marker) {
-        const { label, title, coords, embed, map } = marker.dataset;
+        const d = marker.dataset;
 
-        labelEl.textContent  = label  || 'ЛОКАЦИЯ';
-        titleEl.textContent  = title  || 'Без названия';
-        coordsEl.textContent = coords || '—';
+        
+        elLabel.textContent = d.label || 'ЛЕГЕНДА МЕСТА';
+        elTitle.innerHTML = d.title || 'Название';
+        elCoords.innerHTML = d.coords || '—';
+        elDesc.innerHTML = d.desc || '<p>Описание отсутствует</p>';
+        elPrice.textContent = d.price || '—';
 
-        if (embed) {
-            frameEl.src = embed;
+        if (d.status) {
+            elStatusBlock.style.display = 'inline-flex';
+            elStatusText.textContent = d.status;
+        } else {
+            elStatusBlock.style.display = 'none';
+        }
+
+        elMaterial.textContent = d.material || '—';
+        elSize.textContent = d.size || '—';
+        elEdition.textContent = d.edition || '—';
+
+        if (d.img) {
+            imageEl.src = d.img;
+            imageEl.style.display = 'block';
+        } else {
+            imageEl.style.display = 'none';
+        }
+
+        if (d.embed) {
+            frameEl.src = d.embed;
             frameEl.style.display = '';
         } else {
             frameEl.removeAttribute('src');
             frameEl.style.display = 'none';
-        }
-
-        if (map) {
-            linkEl.href = map;
-            linkEl.innerHTML = 'Открыть в новой вкладке <span class="arrow">→</span>';
-            linkEl.removeAttribute('aria-disabled');
-            linkEl.style.pointerEvents = '';
-            linkEl.style.opacity = '';
-        } else {
-            linkEl.href = '#';
-            linkEl.textContent = 'Координаты не существуют';
-            linkEl.setAttribute('aria-disabled', 'true');
-            linkEl.style.pointerEvents = 'none';
-            linkEl.style.opacity = '0.5';
         }
 
         modal.showModal();
@@ -53,9 +68,11 @@
     }
 
     closeBtn.addEventListener('click', closeModal);
+    
     modal.addEventListener('click', (e) => {
         if (e.target === modal) closeModal();
     });
+
     modal.addEventListener('close', () => {
         frameEl.removeAttribute('src');
     });

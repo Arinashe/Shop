@@ -8,15 +8,18 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     background-color: #0d1b2a;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    padding: 40px 0;
 }
 
 .hero-banner {
     position: relative;
     width: 90%;
+    max-width: 1200px;
     height: 500px;
+    margin-bottom: 80px;
     overflow: hidden;
     background-color: #0d1b2a;
     border: 1px solid rgba(255, 255, 255, 0.4);
@@ -25,7 +28,6 @@ body {
 
 .banner-image {
     position: absolute;
-    border-radius: 20px;
     top: 0;
     left: 0;
     width: 100%;
@@ -33,7 +35,7 @@ body {
     object-fit: cover;
     object-position: center;
     z-index: 0;
-    
+    border-radius: 20px;
 }
 
 .hero-banner::before {
@@ -46,7 +48,6 @@ body {
     background: linear-gradient(90deg, rgba(13, 27, 42, 0.95) 0%, rgba(13, 27, 42, 0.7) 35%, rgba(13, 27, 42, 0) 70%);
     z-index: 1;
 }
-
 
 .content-wrapper {
     position: relative;
@@ -122,4 +123,68 @@ body {
     color: rgba(255, 255, 255, 0.4);
     text-transform: uppercase;
     font-family: monospace;
+}
+
+.how-it-works {
+    width: 90%;
+    max-width: 1200px;
+    color: #ffffff;
+}
+
+.how-wrapper {
+    padding: 20px 0;
+}
+
+.how-title {
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: 500;
+    margin-bottom: 60px;
+    letter-spacing: -0.5px;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.step-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.step-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.step-number {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+}
+
+.step-icon {
+    font-size: 24px;
+    color: #4a90e2;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.step-desc {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.6);
 }

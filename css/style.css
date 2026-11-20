@@ -1,9 +1,9 @@
 :root{
     --color1: #E8F1F8; /*текст*/
     --color2: #0B1220; /*фон*/
-    /* --color3: #fff;
-    --color4: #fff;
-    --color5: #fff; */
+    --color3: #101C2C; /*карточки и тд*/
+    --color4: #8B9DAC; /*текст неактивных кнопок*/
+    --color5: #fff;
 }
 
 * {
@@ -22,6 +22,11 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: var(--color2);
 }
 
 header>.logo>a{
@@ -46,4 +51,100 @@ header>nav>ul>li{
 header>nav>ul>li>a{
     text-decoration: none;
     color: var(--color1);
+}
+
+header>.logo>a:hover, header>nav>ul>li>a:hover{
+    color: var(--color4);
+}
+
+#catalog{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#catalog>h1{
+    color: var(--color1);
+}
+
+.filters{
+    display: flex;
+    gap: 15px;
+}
+
+.filters>button{
+    background-color: var(--color2);
+    border: 1px solid var(--color3);
+    border-radius: 15px;
+    padding: 10px;
+    color: var(--color4);
+}
+
+.filters>button.active{
+    background-color: var(--color4);
+    color: var(--color2);
+    border-color: var(--color2);
+}
+
+#cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.card{
+    padding: 20px;
+    background-color: var(--color3);
+    border: 1px solid var(--color4);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px
+}
+
+.card-img{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+
+.card-label>p{
+    /* color: #7FD4FF;  */
+    font-size: 12px;
+}
+
+.card>h2{
+    color: var(--color1);
+    font-size: 24px;
+}
+
+.card>p{
+    color: var(--color4);
+    font-size: 18px;
+}
+
+.card>hr{
+    border-color: var(--color4);
+}
+
+.card-footer{
+    color: var(--color1);
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow-btn{
+    padding: 5px 10px;
+    display: flex;
+    text-align: center;
+    font-size: 16px;
+    background-color: var(--color4);
+    border-radius: 5px;
+    border: none;
+}
+
+.arrow-btn:hover{
+    background-color: var(--color4);
 }

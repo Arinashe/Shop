@@ -45,6 +45,7 @@ body {
     width: 100%;
     padding: 0 80px;
     overflow: hidden;
+    margin-top: 60px;
 }
 
 .bg-label {
@@ -693,7 +694,7 @@ body {
 
 .site-footer {
     padding: 60px 5% 40px;
-    border-top: 1px solid var(--border);
+    border-top: 1px solid var(--color3);
 }
 
 .footer-container {
@@ -819,6 +820,7 @@ header {
     z-index: 100;
     width: 100%;
     background-color: var(--color2);
+    /* border: 1px solid white; */
 }
 
 header>.logo>a {
@@ -940,15 +942,13 @@ header>nav>ul>li>a:hover {
     background-color: var(--color4);
 }
 
-
-
-
-
 .delivery {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0 50px;
+    margin-bottom: 40px;
+    margin-top: 20px;
 }
 
 .delivery>.content{
@@ -998,16 +998,20 @@ header>nav>ul>li>a:hover {
 }
 
 hr{
-    border: 2px solid var(--color3)
+    border: 1px solid var(--color3)
 }
 
 .form-section {
-    width: 80%;
+    padding: 20px 50px;
+    max-width: 1400px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    align-self: center;
     gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 0 0 40px 0;
 }
 
 .label {

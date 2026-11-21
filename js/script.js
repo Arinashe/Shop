@@ -148,7 +148,7 @@ addCard(list_product)
 filters(list_product)
 
 
-(function () {
+function name_fun() {
     const modal = document.getElementById('mapModal');
     const closeBtn = modal.querySelector('.modal-close');
     const frameEl = document.getElementById('modalMapFrame');
@@ -226,4 +226,11 @@ filters(list_product)
     modal.addEventListener('close', () => {
         frameEl.removeAttribute('src');
     });
-})();
+};
+
+
+name_fun()
+
+let btns1 = document.querySelectorAll('.arrow-btn')
+
+console.log(btns1);

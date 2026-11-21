@@ -72,7 +72,8 @@ let list_product = [
         name: "Последний рубеж",
         description: "Там, где заканчивается карта и начинается тишина.",
         price: 1390,
-        img: "./img/last-frontier.png"
+        img: "./img/polar-station.png",
+        color: '#7FD4FF' 
     },
     {
         id: 8,
@@ -81,7 +82,8 @@ let list_product = [
         name: "Свет в тумане",
         description: "Для тех, кто плывёт туда, где нет берега.",
         price: 1290,
-        img: "./img/light-in-fog.png"
+        img: "./img/last-light.png",
+        color: '#FFD166'
     },
     {
         id: 9,
@@ -90,7 +92,8 @@ let list_product = [
         name: "Звёздная пыль",
         description: "Собирает свет умерших звёзд.",
         price: 1590,
-        img: "./img/stardust.png"
+        img: "./img/pocket-universe.png",
+        color: '#5C6BC0'
     }
 ];
 
@@ -105,7 +108,7 @@ function addCard(list) {
                 <hr>
                 <div class="card-footer">
                     <span class="price">${p.price} ₽</span>
-                    <button class="arrow-btn" id='btn${p.index} style='color:${p.color}'>↗</button>
+                    <button class="arrow-btn" id='btn${p.index}' style='color:${p.color}'>↗</button>
                 </div>
         </div>
         `
